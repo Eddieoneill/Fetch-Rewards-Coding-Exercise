@@ -9,7 +9,7 @@ import Foundation
 
 struct RewardsAPI {
     
-    static func getQuestion(completion: @escaping (Result<[Rewards], AppError>) -> ()) {
+    static func getRewards(completion: @escaping (Result<[Rewards], AppError>) -> ()) {
         let urlString = "https://fetch-hiring.s3.amazonaws.com/hiring.json"
         
         guard let url = URL(string: urlString) else {

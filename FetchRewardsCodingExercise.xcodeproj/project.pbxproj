@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6CD070A125242EF6002D68FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD070A025242EF6002D68FD /* AppDelegate.swift */; };
 		6CD070A325242EF6002D68FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD070A225242EF6002D68FD /* SceneDelegate.swift */; };
-		6CD070A525242EF6002D68FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD070A425242EF6002D68FD /* ViewController.swift */; };
 		6CD070A825242EF6002D68FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD070A625242EF6002D68FD /* Main.storyboard */; };
 		6CD070AA25242EF7002D68FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CD070A925242EF7002D68FD /* Assets.xcassets */; };
 		6CD070AD25242EF7002D68FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD070AB25242EF7002D68FD /* LaunchScreen.storyboard */; };
@@ -17,13 +16,14 @@
 		6CD070C025243051002D68FD /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD070BF25243051002D68FD /* NetworkHelper.swift */; };
 		6CD070C32524308D002D68FD /* Rewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD070C22524308D002D68FD /* Rewards.swift */; };
 		6CD070C6252430F5002D68FD /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD070C5252430F5002D68FD /* AppError.swift */; };
+		6CD070CA252439D8002D68FD /* RewardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD070C9252439D8002D68FD /* RewardsController.swift */; };
+		6CD070CF25243A4E002D68FD /* RewardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD070CE25243A4E002D68FD /* RewardsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6CD0709D25242EF6002D68FD /* FetchRewardsCodingExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchRewardsCodingExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD070A025242EF6002D68FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CD070A225242EF6002D68FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6CD070A425242EF6002D68FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6CD070A725242EF6002D68FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CD070A925242EF7002D68FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CD070AC25242EF7002D68FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +32,8 @@
 		6CD070BF25243051002D68FD /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		6CD070C22524308D002D68FD /* Rewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewards.swift; sourceTree = "<group>"; };
 		6CD070C5252430F5002D68FD /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		6CD070C9252439D8002D68FD /* RewardsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsController.swift; sourceTree = "<group>"; };
+		6CD070CE25243A4E002D68FD /* RewardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				6CD070BA25242FEF002D68FD /* Storyboads */,
 				6CD070B925242FD3002D68FD /* SupportingFiles */,
+				6CD070CD25243A2F002D68FD /* Cells */,
 				6CD070B825242F82002D68FD /* ViewController */,
 				6CD070B725242F78002D68FD /* Model */,
 				6CD070B525242F4C002D68FD /* Network */,
@@ -95,7 +98,7 @@
 		6CD070B825242F82002D68FD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6CD070A425242EF6002D68FD /* ViewController.swift */,
+				6CD070C9252439D8002D68FD /* RewardsController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -117,6 +120,14 @@
 				6CD070AB25242EF7002D68FD /* LaunchScreen.storyboard */,
 			);
 			path = Storyboads;
+			sourceTree = "<group>";
+		};
+		6CD070CD25243A2F002D68FD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6CD070CE25243A4E002D68FD /* RewardsCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,12 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CD070A525242EF6002D68FD /* ViewController.swift in Sources */,
 				6CD070BC25243036002D68FD /* RewardsAPI.swift in Sources */,
 				6CD070C32524308D002D68FD /* Rewards.swift in Sources */,
 				6CD070C025243051002D68FD /* NetworkHelper.swift in Sources */,
 				6CD070A125242EF6002D68FD /* AppDelegate.swift in Sources */,
+				6CD070CF25243A4E002D68FD /* RewardsCell.swift in Sources */,
 				6CD070A325242EF6002D68FD /* SceneDelegate.swift in Sources */,
+				6CD070CA252439D8002D68FD /* RewardsController.swift in Sources */,
 				6CD070C6252430F5002D68FD /* AppError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3AKWB6WDMH;
 				INFOPLIST_FILE = FetchRewardsCodingExercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -352,7 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.edward.FetchRewardsCodingExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -364,6 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3AKWB6WDMH;
 				INFOPLIST_FILE = FetchRewardsCodingExercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -371,7 +385,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.edward.FetchRewardsCodingExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
